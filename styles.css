@@ -1,5 +1,12 @@
 .body{
 
 }
+.fireworks-container{
+    border: solid black 5px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    
+}
 
 
