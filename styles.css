@@ -3,6 +3,39 @@ position: absolute;
 top:275px;
 left:100px;
 }
+.fireworks-container{
+    border: solid black 5px;
+    height: 300px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+    top: 100px;
+    left: 1000px;
+    display: flex;
+}
+.fireworks-container img{
+    object-fit:fill;
+    height: 300px;
+    width: 500px;
+    opacity: 0.6;
+    position: absolute;
+    
+}
+.fireworks-container:hover:before img{
+    
+}
+.fireworks-container:hover:after img{
+    animation: fadeffect 2s infinite;
+
+    
+}
+@keyframes fadeEffect {
+    0% { opacity: 0; }  /* Start with fully transparent */
+    50% { opacity: 1; } /* Fade in to fully opaque */
+    100% { opacity: 0; } /* Fade out to fully transparent */
+  }
+  
+
 
 .people2{
     position: absolute;
